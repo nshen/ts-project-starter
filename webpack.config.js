@@ -1,14 +1,14 @@
 var webpack = require('webpack');
 var path = require('path')
 
-var SRC_PATH = path.resolve(__dirname, 'src/app.ts');
+var SRC_PATH = path.resolve(__dirname, "src/app.ts");
 var BUILD_PATH = path.resolve(__dirname, "build");
 
 module.exports = {
     entry: SRC_PATH,
     output: {
         path: BUILD_PATH,
-        publicPath: '/',
+        // publicPath: '/',
         filename: 'bundle.js'
     },
     // Turn on sourcemaps
@@ -18,18 +18,18 @@ module.exports = {
     },
     // Add minification
     plugins: [
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false
-        //     }
-        // })
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
     ],
     module: {
         loaders: [
             { test: /\.tsx?$/, loader: 'ts-loader' }
         ]
-    },
-    devServer: {
-        contentBase: "./build", //static server根目录
     }
+    // devServer: {
+    //     contentBase: "./build", //static server根目录
+    // }
 }
