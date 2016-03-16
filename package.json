@@ -15,6 +15,7 @@
     },
     "scripts": {
         "start": "webpack-dev-server",
-        "test": "webpack-dev-server \"mocha!./test/test.js\" --output-filename test.js --port 8081"
+        "pretest": "webpack --config test.webpack.js",
+        "test": "mocha test/testBundle.js"
     }
 }

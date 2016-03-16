@@ -3,13 +3,17 @@
 
 typescript + webpack + mocha + chai 
 
+
+开发:
+
 `npm start`
 
 http://localhost:8080/webpack-dev-server/bundle
 
+mocha测试:
+
 `npm test`
 
-http://localhost:8081/webpack-dev-server/test
 
 发布:
 
