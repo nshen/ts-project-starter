@@ -1,4 +1,4 @@
 import { ModuleA } from './ModuleA';
 
-new ModuleA();
-new ModuleA("Nshen");
+console.log(new ModuleA().toString());
+console.log(new ModuleA("Nshen").toString());
