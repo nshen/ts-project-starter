@@ -1,7 +1,7 @@
 {
     "name": "tsproject",
     "version": "0.0.1",
-    "description": "",
+    "description": "typescript + webpack + mocha + chai 工作流模板",
     "author": "nshen.net",
     "license": "MIT",
     "devDependencies": {
