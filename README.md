@@ -17,8 +17,37 @@ http://localhost:8080/webpack-dev-server/bundle
 
 `webpack`
 
+---
 
- -----
+# [TsLint](http://palantir.github.io/tslint/)
+
+## 1. 安装vscode-tslint 扩展
+
+https://marketplace.visualstudio.com/items?itemName=eg2.tslint
+
+## 2. 安装tslingt
+
+`npm install -g tslint`
+
+## 3. 在 `.vscode/settings.json` 中配置
+
+```
+// Place your settings in this file to overwrite default and user settings.
+{
+    // tslint.enable - enable/disable tslint.
+    "tslint.enable": true,
+    // tslint.rulesDirectory - an additional rules directory, for user-created rules.
+    // tslint.configFile - the configuration file that tslint should use instead of the default tslint.json.
+}
+
+```
+
+todo: 使用微软的rules
+
+>https://www.npmjs.com/package/tslint-microsoft-contrib
+>https://github.com/Microsoft/tslint-microsoft-contrib
+
+-----
 
 #### 附：安装太慢可以使用淘宝镜像
 

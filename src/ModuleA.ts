@@ -6,7 +6,7 @@ export class ModuleA {
         this._name = name;
     };
 
-    toString(): string {
+    public toString(): string {
         return `Hello ${this._name}!`;
     }
 }
