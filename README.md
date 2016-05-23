@@ -46,7 +46,7 @@ https://marketplace.visualstudio.com/items?itemName=eg2.tslint
     // tslint.rulesDirectory - an additional rules directory, for user-created rules.
     // tslint.configFile - the configuration file that tslint should use instead of the default tslint.json.
 }
-
+```
 
 ## 修改了的tslint规则
 
