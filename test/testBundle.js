@@ -44,11 +44,9 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/// <reference path="../typings/main.d.ts" />
 	"use strict";
 	var moduleATest = __webpack_require__(1);
 	var fakeTest = __webpack_require__(43);
-	//所有需要测试的必须列在这里才能被webpack打包成功
 	moduleATest;
 	fakeTest;
 
@@ -8147,7 +8145,6 @@
 	var ModuleA = (function () {
 	    function ModuleA(name) {
 	        if (name === void 0) { name = "World"; }
-	        // console.log(`Hello ${name}!`);
 	        this._name = name;
 	    }
 	    ;

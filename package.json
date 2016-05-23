@@ -1,22 +1,23 @@
 {
-    "name": "tsproject",
-    "version": "0.0.1",
-    "description": "typescript + webpack + mocha + chai 工作流模板",
-    "author": "nshen.net",
-    "license": "MIT",
-    "devDependencies": {
-        "chai": "^3.5.0",
-        "mocha": "^2.4.5",
-        "ts-loader": "^0.8.2",
-        "typescript": "^1.8.10",
-        "webpack": "^1.13.1",
-        "webpack-dev-server": "^1.14.1"
-    },
-    "scripts": {
-        "start": "webpack-dev-server",
-        "pretest": "webpack --config webpack.test.js",
-        "test": "mocha test/testBundle.js",
-        "typings": "typings",
-        "postinstall": "typings install"
-    }
+  "name": "tsproject",
+  "version": "0.0.1",
+  "description": "typescript + webpack + mocha + chai 工作流模板",
+  "author": "nshen.net",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "ts-loader": "^0.8.2",
+    "tslint": "^3.2.1",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "pretest": "webpack --config webpack.test.js",
+    "test": "mocha test/testBundle.js",
+    "typings": "typings",
+    "postinstall": "typings install"
+  }
 }

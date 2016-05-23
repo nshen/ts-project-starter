@@ -3,11 +3,12 @@
         "sourceMap": true,
         "target": "es5",
         "module": "commonjs",
-        "moduleResolution": "node"
+        "removeComments": true
     },
     "exclude": [
-        "typings/browser.d.ts", //不排除这个会出现重复定义的bug
-        "typings/browser",//不排除这个会出现重复定义的bug
-        "node_modules"
+        "node_modules",
+        "build",
+        "dist",
+        ".git"
     ]
 }
