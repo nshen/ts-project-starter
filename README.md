@@ -1,4 +1,4 @@
-# typescript + webpack + mocha + chai 工作流模板 
+# vscode + typescript + webpack + mocha + chai 工作流模板 
 
 
 
@@ -18,6 +18,13 @@ http://localhost:8080/webpack-dev-server/bundle
 `webpack`
 
 ---
+
+# 关于 typings 
+
+## typings 版本 1.0.4 语法改成这样了
+
+    typings install dt~mocha --global --save
+    typings install dt~chai --global --save    
 
 # [TsLint](http://palantir.github.io/tslint/)
 
@@ -40,21 +47,10 @@ https://marketplace.visualstudio.com/items?itemName=eg2.tslint
     // tslint.configFile - the configuration file that tslint should use instead of the default tslint.json.
 }
 
-```
 
-todo: 使用微软的rules
+## 修改了的tslint规则
 
->https://www.npmjs.com/package/tslint-microsoft-contrib
->https://github.com/Microsoft/tslint-microsoft-contrib
+`"indent": [ true,"tabs"]`
+            
+`"quotemark": [false,"double"]`
 
------
-
-#### 附：安装太慢可以使用淘宝镜像
-
-http://npm.taobao.org/
-
-##### 安装 `cnpm`
-
-`npm install -g cnpm --registry=https://registry.npm.taobao.org`
-
-安装后就可以用`cnpm`代替`npm`了

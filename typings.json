@@ -1,8 +1,8 @@
 {
-  "dependencies": {
-    "chai": "registry:npm/chai#3.4.0+20160308201903"
-  },
-  "ambientDependencies": {
-    "mocha": "registry:dt/mocha#2.2.5+20151023103246"
+  "name": "tsProject",
+  "dependencies": {},
+  "globalDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160317120654",
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654"
   }
 }
