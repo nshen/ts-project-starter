@@ -5,4 +5,10 @@
     // "tslint.rulesDirectory":"node_modules/tslint-microsoft-contrib",
     // tslint.rulesDirectory - an additional rules directory, for user-created rules.
     // tslint.configFile - the configuration file that tslint should use instead of the default tslint.json. 
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    }
 }
