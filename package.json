@@ -1,7 +1,7 @@
 {
-  "name": "tsproject",
-  "version": "0.0.2",
-  "description": "typescript + webpack + mocha + chai 工作流模板",
+  "name": "ts-project",
+  "version": "0.1.2",
+  "description": "TypeScript Project Starter",
   "author": "nshen.net",
   "license": "MIT",
   "main": "./built/bundle.js",
@@ -18,8 +18,11 @@
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "start": "webpack-dev-server",
-    "pretest": "webpack --config webpack.test.js",
-    "test": "mocha test/testBundle.js"
+    "start": "webpack-dev-server --inline",
+    "build-src": "webpack",
+    "build-test": "tsc -p test-tsconfig.json",
+    "build": "npm run build-src && npm run build-test",
+    "pretest": "npm run build-test",
+    "test": "mocha built/test/**/*.js"
   }
 }
