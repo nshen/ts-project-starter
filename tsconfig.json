@@ -3,12 +3,21 @@
         "sourceMap": true,
         "target": "es5",
         "module": "commonjs",
-        "removeComments": true
+        "removeComments": true,
+        "allowJs": false,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "declaration": true
     },
     "exclude": [
         "node_modules",
-        "build",
+        "built",
         "dist",
         ".git"
+    ],
+    "include": [
+        "./src/**/*"
     ]
 }

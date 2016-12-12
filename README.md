@@ -1,42 +1,39 @@
-# vscode + typescript + webpack + mocha + chai 工作流模板 
+# TypeScript Project Starter
 
+一个干净的 ` vscode + typescript + webpack + mocha + chai` 的开发环境 
 
+## :relaxed: 目录结构
 
-:relaxed: 开发：自动编译
+```
+|---.vscode  // vscode配置
+|---built    // 编译后的js代码都在这里
+|---src      // .ts 源文件
+|---test     // .test.ts 测试源文件
+```
 
-`npm start`
+## :relaxed: 命令行
 
-http://localhost:8080/webpack-dev-server/bundle
+`npm start` 打开 webpack-dev-server 调试
 
-:relaxed: Mocha测试：用`typescript`写测试
+ > http://localhost:8080/index.html
 
-`npm test`
+`npm test` 运行用 `typescript` 编写的 Mocha 测试
 
-
-:relaxed: 发布：发布到build目录下，压缩代码
-
-`webpack`
+`npm run build` 发布：发布到built目录下，压缩代码
 
 ---
 
-# 关于 typings 
+## :relaxed: 如需要 [TsLint](http://palantir.github.io/tslint/)
 
-## typings 版本 1.0.4 语法改成这样了
-
-    typings install dt~mocha --global --save
-    typings install dt~chai --global --save    
-
-# [TsLint](http://palantir.github.io/tslint/)
-
-## 1. 安装vscode-tslint 扩展
+### 1. 安装vscode-tslint 扩展
 
 https://marketplace.visualstudio.com/items?itemName=eg2.tslint
 
-## 2. 安装tslingt
+### 2. 安装tslingt
 
 `npm install -g tslint`
 
-## 3. 在 `.vscode/settings.json` 中配置
+### 3. 在 `.vscode/settings.json` 中配置
 
 ```
 // Place your settings in this file to overwrite default and user settings.
@@ -48,7 +45,7 @@ https://marketplace.visualstudio.com/items?itemName=eg2.tslint
 }
 ```
 
-## 修改了的tslint规则
+### 4. 在跟目录的`tslint.json` 中修改规则
 
 `"indent": [ true,"tabs"]`
             

@@ -1,2 +1,0 @@
-!function(o){function t(e){if(n[e])return n[e].exports;var r=n[e]={exports:{},id:e,loaded:!1};return o[e].call(r.exports,r,r.exports,t),r.loaded=!0,r.exports}var n={};return t.m=o,t.c=n,t.p="",t(0)}([function(o,t,n){"use strict";var e=n(1);console.log((new e.ModuleA).toString()),console.log(new e.ModuleA("Nshen").toString())},function(o,t){"use strict";var n=function(){function o(o){void 0===o&&(o="World"),this._name=o}return o.prototype.toString=function(){return"Hello "+this._name+"!"},o}();t.ModuleA=n}]);
-//# sourceMappingURL=bundle.js.map
