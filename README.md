@@ -14,6 +14,8 @@ todo
 
 
 ----
+基于
 
 https://github.com/Microsoft/TypeScript-Babel-Starter
+
 https://kulshekhar.github.io/ts-jest/
