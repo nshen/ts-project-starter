@@ -1,3 +1,28 @@
+
+npm install --save-dev typescript @babel/core @babel/cli @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+
+
+https://github.com/Microsoft/TypeScript-Babel-Starter
+
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.33",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "ts-loader": "^1.3.1",
+    "tslint": "^4.0.2",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline",
+    "build-src": "webpack",
+    "build-test": "tsc -p test-tsconfig.json",
+    "build": "npm run build-src && npm run build-test",
+    "pretest": "npm run build-test",
+    "test": "mocha built/test/**/*.js"
+  }
 # TypeScript Project Starter
 
 一个干净的 ` vscode + typescript + webpack + mocha + chai` 的开发环境 

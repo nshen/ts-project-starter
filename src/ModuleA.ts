@@ -1,13 +1,22 @@
-export class ModuleA {
+export class ClassA {
 
-    protected _name: string;
+    // protected _name: string;
+    protected n: string = "";
 
     constructor(name: string = "World") {
-        // console.log(`Hello ${name}!`);
-        this._name = name;
+        // this._name = name;
+        this.n = name;
     };
 
     public toString(): string {
-        return `Hello ${this._name}!`;
+        return `Hello ${this.n}!`;
     }
+}
+
+export function FuncA() {
+    console.log('FuncA...');
+}
+
+export function FuncB() {
+    console.log('FuncB...');
 }
