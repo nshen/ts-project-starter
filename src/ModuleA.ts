@@ -18,5 +18,5 @@ export function FuncA() {
 }
 
 export function FuncB() {
-    console.log('FuncB...');
+    return "FuncB...."
 }
