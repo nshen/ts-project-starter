@@ -1,6 +1,10 @@
 import { ClassA, FuncB } from './ModuleA';
 
-let a = new ClassA('World');
-console.log(a.toString());
-// FuncA should be shaked
-FuncB();
+export default function main(): string {
+    let a = new ClassA('World');
+    console.log(a.toString());
+    console.log(FuncB());
+    return a.toString();
+}
+
+export * from './ModuleA';

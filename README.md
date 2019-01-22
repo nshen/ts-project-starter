@@ -5,17 +5,27 @@
 ## :relaxed: 目录结构
 
 ```
-// todo
++--- __test__ 所有test文件，直接用typescript编写，命名为 xxx.test.ts
++
+
 ```
 
 ## :relaxed: 命令行
 
 todo
 
+## 发布一个npm包
+
+```javascript
+npm run build  // build typs
+npm run rollup // compile
+npm login
+npm publish --access public
+```
 
 ----
 基于
 
 https://github.com/Microsoft/TypeScript-Babel-Starter
-
+https://rollupjs.org/guide/en
 https://kulshekhar.github.io/ts-jest/
