@@ -22,7 +22,8 @@ git commit -m 'initial commit' # 创建第一条提交，新项目
 
 ```
 +--- __test__ 所有test文件，直接用typescript编写，命名为 xxx.test.ts
-+
++--- src 源码
++--- dist 发布目录
 
 ```
 
@@ -42,6 +43,6 @@ npm publish --access public
 ----
 基于
 
-https://github.com/Microsoft/TypeScript-Babel-Starter
-https://rollupjs.org/guide/en
-https://kulshekhar.github.io/ts-jest/
+- https://github.com/Microsoft/TypeScript-Babel-Starter
+- https://rollupjs.org/guide/en
+- https://kulshekhar.github.io/ts-jest/
