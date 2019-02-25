@@ -2,6 +2,22 @@
 
 一个干净的 `TypeScript 3.x + Babel 7.x + webpack + rollup + Jest` 的开发环境 
 
+## 创建一个新项目
+
+```cmd
+
+git clone git@github.com:nshen/ts-project-starter.git newProject # 克隆到本地命名为 newProject
+cd newProject/
+npm install # 或者用阿里的 cnpm install
+rm -rf .git # 删除.git目录
+git init    # 建立全新的git目录，历史清空了
+git add .
+git commit -m 'initial commit' # 创建第一条提交，新项目
+
+```
+
+
+
 ## :relaxed: 目录结构
 
 ```
